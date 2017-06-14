@@ -26,8 +26,9 @@ RUN git clone https://github.com/Genoil/cpp-ethereum/ \
     && cd cpp-ethereum \
     && mkdir build \
     && cd build \
-    && cmake -DBUNDLE=cudaminer .. \
+    && cmake -DBUNDLE=cudaminer -DCOMPUTE=61.. \
     && make -j8
+    && mkdir /data
 
 
 ENV GPU_FORCE_64BIT_PTR=0
