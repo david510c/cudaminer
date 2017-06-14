@@ -26,7 +26,7 @@ RUN git clone https://github.com/david510c/cpp-ethereum/ \
     && cd cpp-ethereum \
     && mkdir build \
     && cd build \
-    && cmake -DBUNDLE=cudaminer -DCOMPUTE=61.. \
+    && cmake -DBUNDLE=cudaminer -DCOMPUTE=61 .. \
     && make -j8
     && mkdir /data
 
