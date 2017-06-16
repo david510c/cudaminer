@@ -8,6 +8,7 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y git \
      cmake \
+     libcrypto++-dev \
      libcryptopp-dev \
      libleveldb-dev \
      libjsoncpp-dev \
@@ -22,7 +23,7 @@ RUN apt-get update \
      libmicrohttpd-dev \
      build-essential
 
-RUN git clone https://github.com/david510c/cpp-ethereum.git \
+RUN git clone https://github.com/Genoil/cpp-ethereum.git \
     && cd cpp-ethereum \
     && mkdir build \
     && cd build \
