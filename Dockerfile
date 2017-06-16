@@ -8,7 +8,6 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y git \
      cmake \
-     libcrypto++-dev \
      libcryptopp-dev \
      libleveldb-dev \
      libjsoncpp-dev \
